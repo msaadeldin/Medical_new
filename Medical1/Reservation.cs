@@ -78,12 +78,12 @@ namespace Medical1
         {
             try
             {
-                           
-                               
-                
-                tblReservTableAdapter.Insert(12, DateTime.Now, 0, Convert.ToInt16( tbEmpCode.Text), cbEmpName.Text, cbInvoice.Checked, cbVacation.Checked, cbCheckUp.Checked, cbStatus.Checked,"محمد جمال"); 
-                    
 
+
+
+                tblReservTableAdapter.Insert(12, DateTime.Now, 0, Convert.ToInt16(tbEmpCode.Text), cbEmpName.Text, cbInvoice.Checked, cbVacation.Checked, cbCheckUp.Checked, cbStatus.Checked, "محمد جمال");
+
+            }
             catch (Exception ex)
             {
 
