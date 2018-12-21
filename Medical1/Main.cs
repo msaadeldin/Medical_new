@@ -19,7 +19,7 @@ namespace Medical1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Reservation reserv = new Reservation();
+            Resrvation reserv = new Resrvation();
             reserv.Show();
 
 
