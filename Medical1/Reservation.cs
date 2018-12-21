@@ -37,42 +37,7 @@ namespace Medical1
 
 
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                DataSet dt = new DataSet();
-                DataTable table = new DataTable("TblReserv");
-                table.Columns.Add(new DataColumn("Reserv_no", typeof(int)));
-                table.Columns.Add(new DataColumn("Reserv_date", typeof(DateTime)));
-                table.Columns.Add(new DataColumn("Emp_id", typeof(int)));
-                table.Columns.Add(new DataColumn("Emp_name", typeof(string)));
-                table.Columns.Add(new DataColumn("inv_confirm", typeof(bool)));
-                table.Columns.Add(new DataColumn("vac_confirm", typeof(bool)));
-                table.Columns.Add(new DataColumn("check_up_type", typeof(bool)));
-                table.Columns.Add(new DataColumn("Status_view", typeof(bool)));
-
-                DataRow row = table.NewRow();
-                row["Reserv_no"] = 11;
-                row["Reserv_date"] = DateTime.Now;
-                //row["Emp_id"] = emp_codeTextBox.Text;
-                //row["Emp_name"] = emp_nameComboBox.Text;
-                //row["inv_confirm"] = invoiceCheckBox.Checked;
-                //row["vac_confirm"] = vacationCheckBox.Checked;
-                //row["check_up_type"] = checkupCheckBox.Checked;
-                //row["Status_view"] = statusCheckBox.Checked;
-
-
-                table.Rows.Add(row);
-                dt.Tables.Add(table);
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.StackTrace);
-            }
-
-        }
+       
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
